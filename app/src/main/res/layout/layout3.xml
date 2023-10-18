@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valoración de la app"
+        android:typeface="monospace"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/groupValoracion">
+        <RadioButton
+            android:id="@+id/radUtilidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utilidad" />
+
+        <RadioButton
+            android:id="@+id/radDiseno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diseño" />
+
+        <RadioButton
+            android:id="@+id/radAccesibilidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Accesibilidad" />
+
+        <RadioButton
+            android:id="@+id/radRendimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rendimiento" />
+        </RadioGroup>
+
+    <RatingBar
+        android:id="@+id/miRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="3.0"
+        android:stepSize="0.5"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/txtValoracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>
