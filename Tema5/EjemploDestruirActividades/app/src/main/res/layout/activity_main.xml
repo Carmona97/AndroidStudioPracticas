@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/cadenaUsuario"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/nombreEditxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"/>
+    <TextView
+        android:id="@+id/contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/cadenaContrasena"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/contrasenaEditxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:inputType="textPassword"
+        android:saveEnabled="false"/>
+</LinearLayout>

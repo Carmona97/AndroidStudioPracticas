@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6fff9"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="GuardaCumpleañosApp"
+        android:textAlignment="center"
+        android:textColor="#020102"
+        android:textSize="30dp"
+        android:typeface="monospace" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="1">
+
+        <Button
+            android:id="@+id/btnValoraciones"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#ffbc3c"
+            android:text="Valorar app"
+            android:textColor="#000" />
+
+        <Button
+            android:id="@+id/btnAnadirCumpleano"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="#ffbc3c"
+            android:text="Añadir cumpleaños"
+            android:textColor="#000" />
+
+    </GridLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/tarta" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Usuario"
+        android:paddingTop="5dp"
+        android:textColor="@color/black"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Contraseña"
+        android:paddingTop="20dp"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        android:inputType="textPassword"/>
+
+    <ImageButton
+        android:id="@+id/btnIdentificarse"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#00000000"
+        android:src="@drawable/usuario" />
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#ffbc3c"
+        android:text="Iniciar sesion"
+        android:textColor="#000"
+        android:visibility="invisible" />
+
+</LinearLayout>

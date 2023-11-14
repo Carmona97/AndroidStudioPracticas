@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EjemploDestruirActividades</string>
+    <string name="cadenaUsuario">
+        Introduce el usuario:
+    </string>
+    <string name="cadenaContrasena">
+        Introduce la contraseña:
+    </string>
+</resources>
