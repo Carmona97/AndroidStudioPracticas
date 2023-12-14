@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contacto" android:title="Contacta con nosotros"/>
+    <item android:id="@+id/tiendas" android:title="Tiendas recomendadas">
+        <menu>
+            <item android:id="@+id/asmodee" android:title="ASMODEE"/>
+            <item android:id="@+id/mulligan" android:title="MULLIGAN"/>
+            <item android:id="@+id/zacatrus" android:title="ZACATRUS"/>
+        </menu>
+    </item>
+</menu>

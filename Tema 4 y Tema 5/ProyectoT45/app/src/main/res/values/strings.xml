@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ProyectoT45</string>
+    <string name="titulo">\tCARMONA\n BOARDGAMES</string>
+    <string name="carrito">AÑADIR AL CARRITO</string>
+    <string name="fav">AÑADIR JUEGOS A FAVORITOS</string>
+</resources>

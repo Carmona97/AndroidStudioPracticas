@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">tema5Ejer8</string>
+    <string name="textoCabecera">Selecciona los dispositivos que usas para navegar por internet y pulsa \"Aceptar\"</string>
+    <string name="botonAceptar">ACEPTAR\n</string>
+</resources>

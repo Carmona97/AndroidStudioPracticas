@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:layout_alignParentBottom="true"
+        android:gravity="center|bottom"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#F00"
+        android:padding="30dp"
+        android:text="Pulse una opcion del menu"/>
+
+</RelativeLayout>
