@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="SONIDO Y VIBRACION">
+
+        <RingtonePreference
+            android:key="tonoAlarma"
+            android:title="Tono de alarma"/>
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="MODO SILENCIO">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="modoSilencio"
+            android:title="Modo Silencio"
+            android:summary="Silenciar llamadas entrantes y notificaciones"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="silenciarMultimedia"
+            android:title="Silenciar Multimedia en Modo silencio"
+            android:summary="Juegos,música,videos y otras aplicaciones"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="NO MOLESTAR">
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="noMolestar"
+            android:title="No Molestar"
+            android:summary="No habrá recordatorios de llamadas entrantes ni notificaciones"/>
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="programarHora"
+            android:title="Programar hora de activacion" />
+    </PreferenceCategory>
+    <EditTextPreference
+        android:key="inicioActivacion"
+        android:title="Iniciar"
+        android:enabled="false"/>
+    <EditTextPreference
+        android:key="finalizarActivacion"
+        android:title="Finalizar"
+        android:enabled="false"/>
+    <EditTextPreference
+        android:key="repetirActivacion"
+        android:title="Repetir"
+        android:enabled="false"/>
+
+</PreferenceScreen>
