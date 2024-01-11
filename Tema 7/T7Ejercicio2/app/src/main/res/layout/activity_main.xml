@@ -14,6 +14,7 @@
         android:textSize="24dp"
         android:textColor="@color/black"/>
     <Button
+        android:id="@+id/definePrefs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="200dp"
@@ -24,6 +25,7 @@
         android:textStyle="bold"
         android:typeface="monospace"/>
     <Button
+        android:id="@+id/recuperaPrefs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#cac2c0"
