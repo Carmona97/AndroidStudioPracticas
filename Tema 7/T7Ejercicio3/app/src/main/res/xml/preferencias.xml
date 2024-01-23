@@ -33,18 +33,54 @@
             android:defaultValue="false"
             android:key="programarHora"
             android:title="Programar hora de activacion" />
+        <EditTextPreference
+            android:key="inicioActivacion"
+            android:title="Iniciar"
+            android:dialogTitle="Indique la hora de inicio"
+            android:dependency="programarHora"/>
+        <EditTextPreference
+            android:key="finalizarActivacion"
+            android:title="Finalizar"
+            android:dialogTitle="Indique la hora de finalizacion"
+            android:dependency="programarHora"/>
+        <ListPreference
+            android:key="repetirActivacion"
+            android:title="Repetir"
+            android:dependency="programarHora"
+            android:entries="@array/repeticion"
+            android:entryValues="@array/repeticion"/>
     </PreferenceCategory>
-    <EditTextPreference
-        android:key="inicioActivacion"
-        android:title="Iniciar"
-        android:enabled="false"/>
-    <EditTextPreference
-        android:key="finalizarActivacion"
-        android:title="Finalizar"
-        android:enabled="false"/>
-    <EditTextPreference
-        android:key="repetirActivacion"
-        android:title="Repetir"
-        android:enabled="false"/>
+    <SwitchPreference
+        android:key="bloqueado"
+        android:title="Cuando el dispositivo esté bloqueado"/>
+    <SwitchPreference
+        android:key="llamadasRepetidas"
+        android:title="Notificar llamadas repetidas"
+        android:dialogTitle="Repetir" />
+    <PreferenceCategory android:title="VIBRAR">
+        <SwitchPreference
+            android:key="vibrarLLamadas"
+            android:title="Vibrar en llamadas"/>
+        <SwitchPreference
+            android:key="vibrarSilencio"
+            android:title="Vibrar en modo silencio"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="RESPUESTA TACTIL">
+        <SwitchPreference android:key="RespuestaTactil"
+            android:title="Respuesta tactil"/>
+
+
+    </PreferenceCategory>
+    <PreferenceScreen android:title="Ajustes adicionales">
+        <SwitchPreference
+            android:key="tonoTeclado"
+            android:title="Tonos de teclado de marcado"/>
+        <SwitchPreference
+            android:key="sonidosToques"
+            android:title="Sonidos de toques"/>
+        <SwitchPreference
+            android:key="ReproducirSonido"
+            android:title="Reproducir sonido al tomar capturas de pantalla"/>
+    </PreferenceScreen>
 
 </PreferenceScreen>

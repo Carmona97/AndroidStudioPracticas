@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">T7Ejercicio3</string>
+    <string name="definir_preferencias">Definir preferencias</string>
+    <string name="recuperar_preferencias">Recuperar preferencias</string>
+    <string name="etiqueta">Dependencias</string>
 </resources>
