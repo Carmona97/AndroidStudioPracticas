@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EjemploSQLite2</string>
+    <string name="codigo">Codigo</string>
+    <string name="nombre">Nombre</string>
+    <string name="insertar">Insertar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="borrar">Borrar</string>
+    <string name="consultar">Consultar</string>
+</resources>
