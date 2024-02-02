@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">T7Ejercicio5</string>
+    <string name="guardar">Guardar</string>
+    <string name="recuperar">Recuperar</string>
+</resources>
