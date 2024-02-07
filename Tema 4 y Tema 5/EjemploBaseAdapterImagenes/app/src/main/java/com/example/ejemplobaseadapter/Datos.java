@@ -10,6 +10,8 @@ public class Datos {
     public Datos(int icono,String texto){
         this.texto = texto;
         this.icono = icono;
+
+
     }
 
     public String getTexto(){
