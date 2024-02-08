@@ -1,7 +1,21 @@
 
-£
-java:S1186:"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8Ä‚õ—Ø1
+g	java:S112a"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ş½ÃØ1
+g	java:S112c"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ş½ÃØ1
+g	java:S112u"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ş½ÃØ1
+g	java:S112w"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Ş½ÃØ1
+J
+java:S1604X"(Make this anonymous inner class a lambda(ÊÛ¶âüÿÿÿÿ8Ş½ÃØ1
+J
+java:S1604h"(Make this anonymous inner class a lambda(”¡àÀúÿÿÿÿ8§ò¿ÃØ1
+t
+java:S3776 "RRefactor this method to reduce its Cognitive Complexity from 22 to the 15 allowed.(¨Œşÿÿÿÿ8¸Ş½ÃØ1
+_
+java:S18542"=Remove this useless assignment to local variable "btnBorrar".(‡ñ•üÿÿÿÿ8¸Ş½ÃØ1
+P
+java:S14812".Remove this unused "btnBorrar" local variable.(‡ñ•üÿÿÿÿ8»Ş½ÃØ1
+¤
+java:S1186€"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¹Æº×şÿÿÿÿ8¼Ş½ÃØ1
+a
+java:S2147b"DCombine this catch with the one at line 96, which has the same body.(ï­£Ä8ÂŞ½ÃØ1
 b
-java:S18546"@Remove this useless assignment to local variable "seleccionado".(ßæ“ˆşÿÿÿÿ8¤²õ—Ø1
-S
-java:S14816"1Remove this unused "seleccionado" local variable.(ßæ“ˆşÿÿÿÿ8¤²õ—Ø1
+java:S2147v"ECombine this catch with the one at line 116, which has the same body.(ï­£Ä8ÆŞ½ÃØ1
