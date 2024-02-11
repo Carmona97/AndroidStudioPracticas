@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Hola">
+        <SwitchPreference android:title="saludo"
+            android:key="saludo"/>
+        <ListPreference android:title="idioma"
+            android:key="language"
+            android:entries="@array/idioma"
+            android:entryValues="@array/idioma"/>
+
+        <EditTextPreference android:title="recomendacion"
+            android:key="recomendacion"
+            android:summary="Que recomienda?"/>
+    </PreferenceCategory>
+</PreferenceScreen>
