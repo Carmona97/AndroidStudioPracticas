@@ -27,10 +27,37 @@
             android:layout_height="wrap_content"/>
 
         <EditText
-            android:id="@+id/etNombre"
+            android:id="@+id/etApellido"
             android:layout_width="130dp"
             android:layout_height="wrap_content"/>
 
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/actualizarYBorrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:text="Codigo:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/etCodigo"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actualizar"
+            android:layout_margin="5dp"/>
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borrar"
+            android:layout_margin="5dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,17 +74,22 @@
             android:id="@+id/btnActBorrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ins"
+            android:text="Act/Borr"
             android:layout_margin="5dp"/>
 
         <Button
-            android:id="@+id/btnInsertar"
+            android:id="@+id/btnConsulta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ins"
+            android:text="Cons"
             android:layout_margin="5dp"/>
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/verRegistros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
 
