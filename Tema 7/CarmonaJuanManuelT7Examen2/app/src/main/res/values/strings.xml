@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CarmonaJuanManuelT7Examen2</string>
+    <string name="agregar">AGREGAR</string>
+    <string name="eliminar">ELIMINAR</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="buscar_contactos">Buscar contactos</string>
+</resources>
