@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name="ContentProvider"
+            android:authorities="com.example.carmonajuanmanuelt7examen2"
+            android:enabled="true">
+            <meta-data android:name="android.permission.READ_EXTERNAL_STORAGE"
+                android:value="true" /> </provider>
+
     </application>
 
 </manifest>

@@ -1,15 +1,17 @@
+import org.apache.tools.ant.util.JavaEnvUtils.VERSION_1_8
+
 plugins {
     id("com.android.application")
 }
 
 android {
     namespace = "com.example.carmonajuanmanuelt7examen2"
-    compileSdk = 34
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "com.example.carmonajuanmanuelt7examen2"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = 26
+        targetSdk = 32
         versionCode = 1
         versionName = "1.0"
 

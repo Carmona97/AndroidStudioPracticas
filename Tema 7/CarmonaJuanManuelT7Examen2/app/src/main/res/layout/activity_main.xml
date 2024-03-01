@@ -73,13 +73,13 @@
             android:layout_margin="5dp"
             />
         <Button
-            android:id="@+id/btnEliminar"
-            android:text="@string/eliminar"
+            android:id="@+id/btnModificar"
+            android:text="@string/modificar"
             android:layout_margin="5dp"
             android:visibility="gone"
             />
         <Button
-            android:id="@+id/btnCANCELAR"
+            android:id="@+id/btnCancelar"
             android:text="@string/cancelar"
             android:layout_margin="5dp"
             />

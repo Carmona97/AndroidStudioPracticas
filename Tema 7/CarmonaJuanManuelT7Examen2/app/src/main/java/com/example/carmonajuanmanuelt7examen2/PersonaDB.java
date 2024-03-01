@@ -8,7 +8,7 @@ import androidx.annotation.Nullable;
 
 public class PersonaDB extends SQLiteOpenHelper {
 
-    String sqlCreate = "CREATE TABLE Personas(clave INTEGER PRIMARY KEY AUTOINCREMENT,nombre TEXT, telefono TEXT, avatar INTEGER)";
+    String sqlCreate = "CREATE TABLE Personas(_id INTEGER PRIMARY KEY AUTOINCREMENT,nombre TEXT, telefono TEXT, avatar INTEGER)";
     String sqlDelete = "DELETE FROM Personas";
 
 
