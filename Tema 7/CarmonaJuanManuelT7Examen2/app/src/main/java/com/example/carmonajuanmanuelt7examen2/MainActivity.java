@@ -26,16 +26,39 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     static int avatarSeleccionado = 0;
+    static int contactoSeleccionado = 0;
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        getMenuInflater().inflate(R.menu.menuContextual,menu);
+        getMenuInflater().inflate(R.menu.menucontextual,menu);
     }
 
     @Override
     public boolean onContextItemSelected(@NonNull MenuItem item) {
-        return super.onContextItemSelected(item);
+
+        final Button modificar = findViewById(R.id.btnModificar);
+        final ListView listaContactos = findViewById(R.id.listaContactos);
+
+        AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) item.getMenuInfo();
+        int index = info.position;
+        DatosPersonaLista contacto = (DatosPersonaLista) listaContactos.getItemAtPosition(index);
+        contactoSeleccionado = contacto.get_id();
+
+
+        switch (item.getTitle().toString()) {
+            case "BORRAR":
+                ContentResolver miContentResolver = getContentResolver();
+                miContentResolver.delete(ContentProvider.CONTENT_URI, ContentProvider.Personas._ID + "=" + contactoSeleccionado, null);
+                listarContactos(listaContactos);
+                return true;
+            case "ACTUALIZAR":
+                modificar.setVisibility(View.VISIBLE);
+                listarContactos(listaContactos);
+                return true;
+            default:
+                return super.onContextItemSelected(item);
+        }
     }
 
     @Override
@@ -77,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         miSpinner.setAdapter(adaptador);
 
         listarContactos(listaContactos);
+        registerForContextMenu(listaContactos);
 
         anadirContacto.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,7 +153,18 @@ public class MainActivity extends AppCompatActivity {
         modificar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                ContentValues values = new ContentValues();
+                values.put(ContentProvider.Personas.COL_AVATAR, avatarSeleccionado);
+                values.put(ContentProvider.Personas.COL_NOMBRE, etNombre.getText().toString());
+                values.put(ContentProvider.Personas.COL_TELEFONO, etTelefono.getText().toString());
 
+                ContentResolver miContentResolver = getContentResolver();
+                miContentResolver.update(ContentProvider.CONTENT_URI, values,ContentProvider.Personas._ID + "=" + contactoSeleccionado, null);
+                etNombre.setText("");
+                etTelefono.setText("");
+
+                listarContactos(listaContactos);
+                modificar.setVisibility(View.GONE);
             }
         });
 
@@ -145,7 +180,7 @@ public class MainActivity extends AppCompatActivity {
         Cursor miCursor = contentResolver.query(uriContactos, columnas, null, null, null);
 
         ArrayList<DatosPersonaLista> listaDatos = new ArrayList<DatosPersonaLista>();
-        AdaptadorLista adaptadorListView = new AdaptadorLista(this, listaDatos);
+        AdaptadorLista adaptador = new AdaptadorLista(this, listaDatos);
 
         if (miCursor != null) {
             if (miCursor.moveToFirst()) {
@@ -169,6 +204,6 @@ public class MainActivity extends AppCompatActivity {
             miCursor.close();
         }
 
-        listaContactos.setAdapter(adaptadorListView);
+        listaContactos.setAdapter(adaptador);
     }
 }
